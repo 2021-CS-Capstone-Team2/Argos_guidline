@@ -31,7 +31,7 @@ keyboardlist_num = {
 
 keyboardlist = [keyboardlist_special, keyboardlist_char]
 
-hotkey_switch = {
+WAR_hotkey_switch = {
 	#화면 전환 단축키
 	(keyboardlist_special['ALT'], keyboardlist_special['TAB']),
 	(keyboardlist_special['CTRL'], keyboardlist_special['ALT'], keyboardlist_special['TAB']),
@@ -41,7 +41,7 @@ hotkey_switch = {
 }
 
 
-hotkey_window = {
+DAN_hotkey_window = {
 	#윈도우 가상 데스크탑 관련 단축키
 	(keyboardlist_special['WINDOW'], keyboardlist_special['CTRL'], keyboardlist_char['D']),
 	(keyboardlist_special['WINDOW'], keyboardlist_special['CTRL'], keyboardlist_special['RIGHT']),
@@ -51,7 +51,7 @@ hotkey_window = {
 }
 
 
-hotkey_move = {
+WAR_hotkey_move = {
 	#대화 상자 단축키(탭 사용 프로그램에서 사용)
 	(keyboardlist_special['CTRL'], keyboardlist_special['TAB']),
 	(keyboardlist_special['CTRL'], keyboardlist_special['PAGEDOWN']),
@@ -69,7 +69,7 @@ hotkey_move = {
 	(keyboardlist_special['CTRL'], keyboardlist_num['9']),
 }
 
-hotkey_size = {
+WAR_hotkey_size = {
 	#창 크기 관련 단축키
 	(keyboardlist_special['WINDOW'], keyboardlist_special['RIGHT']),
 	(keyboardlist_special['WINDOW'], keyboardlist_special['LEFT']),
@@ -82,7 +82,7 @@ hotkey_size = {
 	(keyboardlist_special['SHIFT'], keyboardlist_special['WINDOW'], keyboardlist_special['LEFT'])
 }
 
-hotkey_capture = {
+DAN_hotkey_capture = {
 	#캡쳐 관련 단축키
 	(keyboardlist_special['WINDOW'], keyboardlist_special['SHIFT'], keyboardlist_char['S']),
 	(keyboardlist_special['SHIFT'], keyboardlist_special['WINDOW'], keyboardlist_char['S']),
@@ -90,7 +90,7 @@ hotkey_capture = {
 	(keyboardlist_special['WINDOW'], keyboardlist_char['G'])
 }
 
-hotkey_work_hand = {
+WAR_hotkey_work_hand = {
 	#수기일 때만 check
 	(keyboardlist_special['CTRL'], keyboardlist_char['X']),
 	(keyboardlist_special['CTRL'], keyboardlist_char['C']),
@@ -99,7 +99,7 @@ hotkey_work_hand = {
 	(keyboardlist_special['CTRL'], keyboardlist_char['Z'])
 }
 
-hotkey_work_digital = {
+WAR_hotkey_work_digital = {
 	#워드로 작성할 때만 check
 	(keyboardlist_special['CTRL'], keyboardlist_char['X']),
 	(keyboardlist_special['CTRL'], keyboardlist_char['C']),
@@ -107,11 +107,11 @@ hotkey_work_digital = {
 	(keyboardlist_special['CTRL'], keyboardlist_char['A'])
 }
 
-hotkey_open = {
+DAN_hotkey_open = {
 	#새로운 창을 여는 단축키
-	(keyboardlist_special['CTRL'], keyboardlist_special['ESC']),
-	(keyboardlist_special['CTRL'], keyboardlist_special['SHIFT'], keyboardlist_special['ESC']),
-	(keyboardlist_special['SHIFT'], keyboardlist_special['CTRL'], keyboardlist_special['ESC']),
+	(keyboardlist_special['CTRL'], keyboardlist_special['ESC']), #WINDOW KEY
+	(keyboardlist_special['CTRL'], keyboardlist_special['SHIFT'], keyboardlist_special['ESC']), #작업 관리자
+	(keyboardlist_special['SHIFT'], keyboardlist_special['CTRL'], keyboardlist_special['ESC']), #작업 관리자
 	(keyboardlist_special['WINDOW'], keyboardlist_char['E']), #탐색기
 	(keyboardlist_special['WINDOW'], keyboardlist_char['V']), #클립보드
 }
